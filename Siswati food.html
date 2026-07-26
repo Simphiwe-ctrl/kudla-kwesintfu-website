@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Swati Traditional Food</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,Helvetica,sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#f8f6f2;
+color:#333;
+}
+
+header{
+background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+url("https://images.unsplash.com/photo-1546069901-ba9599a7e63c");
+background-size:cover;
+background-position:center;
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:white;
+}
+
+header h1{
+font-size:60px;
+margin-bottom:20px;
+}
+
+header p{
+font-size:22px;
+max-width:700px;
+}
+
+nav{
+background:#8B4513;
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+nav ul{
+display:flex;
+justify-content:center;
+list-style:none;
+flex-wrap:wrap;
+}
+
+nav li{
+margin:15px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+font-weight:bold;
+font-size:18px;
+transition:.3s;
+}
+
+nav a:hover{
+color:#FFD700;
+}
+
+section{
+padding:70px 10%;
+}
+
+section h2{
+text-align:center;
+margin-bottom:40px;
+font-size:38px;
+color:#8B4513;
+}
+
+.about p{
+font-size:18px;
+line-height:1.8;
+text-align:center;
+}
+
+.foods{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
+}
+
+.card{
+background:white;
+border-radius:10px;
+overflow:hidden;
+box-shadow:0 10px 20px rgba(0,0,0,.15);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.card img{
+width:100%;
+height:220px;
+object-fit:cover;
+}
+
+.card h3{
+padding:15px;
+color:#8B4513;
+}
+
+.card p{
+padding:0 15px 20px;
+line-height:1.6;
+}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.gallery img{
+width:100%;
+height:250px;
+object-fit:cover;
+border-radius:10px;
+transition:.4s;
+}
+
+.gallery img:hover{
+transform:scale(1.05);
+}
+
+.benefits{
+background:#fff7ea;
+border-left:8px solid #8B4513;
+padding:30px;
+border-radius:10px;
+line-height:2;
+font-size:18px;
+}
+
+.contact{
+text-align:center;
+}
+
+.contact p{
+margin:10px;
+font-size:18px;
+}
+
+footer{
+background:#8B4513;
+color:white;
+padding:20px;
+text-align:center;
+margin-top:50px;
+}
+
+button{
+padding:15px 35px;
+margin-top:30px;
+border:none;
+background:#FFD700;
+font-size:18px;
+border-radius:30px;
+cursor:pointer;
+font-weight:bold;
+transition:.3s;
+}
+
+button:hover{
+background:white;
+}
+
+@media(max-width:768px){
+
+header h1{
+font-size:40px;
+}
+
+header p{
+font-size:18px;
+}
+
+nav ul{
+flex-direction:column;
+text-align:center;
+}
+
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<h1>Swati Traditional Food</h1>
+
+<p>
+Discover the rich flavours, culture and heritage of Eswatini through
+its delicious traditional cuisine.
+</p>
+
+<button onclick="document.getElementById('foods').scrollIntoView()">
+Explore Food
+</button>
+
+</header>
+
+<nav>
+
+<ul>
+
+<li><a href="#about">About</a></li>
+
+<li><a href="#foods">Foods</a></li>
+
+<li><a href="#gallery">Gallery</a></li>
+
+<li><a href="#benefits">Benefits</a></li>
+
+<li><a href="#contact">Contact</a></li>
+
+</ul>
+
+</nav>
+
+<section id="about" class="about">
+
+<h2>About Swati Cuisine</h2>
+
+<p>
+
+Swati traditional food reflects the culture and history of the Kingdom
+of Eswatini. Most meals are prepared using locally grown crops such as
+maize, pumpkins, beans and leafy vegetables. Families often gather to
+share meals during celebrations, ceremonies and community events.
+Traditional cooking methods preserve the natural flavours and nutritional
+value of the food.
+
+</p>
+
+</section>
+
+<section id="foods">
+
+<h2>Popular Swati Traditional Foods</h2>
+
+<div class="foods">
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1604908176997-431f9c6cbe74">
+
+<h3>Sidvudvu (Pumpkin)</h3>
+
+<p>
+
+A delicious sweet pumpkin dish often served with maize meal. It is one
+of the most popular traditional meals in Eswatini.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1515003197210-e0cd71810b5f">
+
+<h3>Pap (Maize Meal)</h3>
+
+<p>
+
+Pap is the staple food in Eswatini. It is enjoyed with meat, vegetables
+or sour milk.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1547592166-23ac45744acd">
+
+<h3>Beans</h3>
+
+<p>
+
+Beans are rich in protein and are commonly cooked with maize or served
+alongside pap.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1608039755401-742074f0548d">
+
+<h3>Wild Spinach (Imifino)</h3>
+
+<p>
+
+Fresh leafy vegetables cooked with onions and tomatoes, providing
+important vitamins and minerals.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1">
+
+<h3>Grilled Meat</h3>
+
+<p>
+
+Beef, goat or chicken are commonly prepared during celebrations and
+family gatherings.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1482049016688-2d3e1b311543">
+
+<h3>Sour Milk (Emasi)</h3>
+
+<p>
+
+A traditional fermented milk enjoyed with pap. It has a creamy texture
+and unique flavour.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="gallery">
+
+<h2>Food Gallery</h2>
+
+<div class="gallery">
+
+<img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c">
+
+<img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd">
+
+<img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836">
+
+<img src="https://images.unsplash.com/photo-1544025162-d76694265947">
+
+</div>
+
+</section>
+
+<section id="benefits">
+
+<h2>Health Benefits</h2>
+
+<div class="benefits">
+
+✔ Rich in natural nutrients.<br><br>
+
+✔ Fresh vegetables provide vitamins and minerals.<br><br>
+
+✔ Beans are an excellent source of protein.<br><br>
+
+✔ Pumpkin contains Vitamin A and fibre.<br><br>
+
+✔ Traditional meals are generally less processed and more wholesome.
+
+</div>
+
+</section>
+
+<section id="contact" class="contact">
+
+<h2>Contact</h2>
+
+<p>Email: info@swatifood.com</p>
+
+<p>Phone: +268 7000 0000</p>
+
+<p>Location: Mbabane, Eswatini</p>
+
+</section>
+
+<footer>
+
+<h3>Swati Traditional Food</h3>
+
+<p>
+
+Celebrating the rich culinary heritage of Eswatini.
+
+</p>
+
+<p>
+
+© 2026 Swati Traditional Food Website
+
+</p>
+
+</footer>
+
+<script>
+
+const cards=document.querySelectorAll('.card');
+
+window.addEventListener('scroll',()=>{
+
+cards.forEach(card=>{
+
+const top=card.getBoundingClientRect().top;
+
+if(top<window.innerHeight-100){
+
+card.style.opacity="1";
+card.style.transform="translateY(0)";
+
+}
+
+});
+
+});
+
+cards.forEach(card=>{
+
+card.style.opacity="0";
+card.style.transform="translateY(60px)";
+card.style.transition=".8s";
+
+});
+
+</script>
+
+</body>
+</html>
